@@ -8,6 +8,17 @@ class PostsController < ApplicationController
   end
 
   def new
+    name = "岩崎"
+    messages = %W(
+      #{name}さんの強みは？
+      #{name}さんの性格は？
+      #{name}さんとの関係は？
+      #{name}さんの尊敬しているところは？
+      #{name}さんの弱みをしいてあげるなら？
+      #{name}さんは何をしているひと？
+      #{name}さんのスキルは？
+      )
+   @message = messages.sample
   end 
 
   def create
